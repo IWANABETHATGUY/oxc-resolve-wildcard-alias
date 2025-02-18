@@ -1,0 +1,17 @@
+{
+  "name": "oxc-resolve-alias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.2.1+sha1.48adf39a4ab751eda7b73b99447d1f0b6d227e02",
+  "devDependencies": {
+    "enhanced-resolve": "^5.18.1",
+    "oxc-resolver": "^4.1.0"
+  }
+}
