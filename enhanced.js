@@ -8,7 +8,7 @@ const myResolve = resolve.create({
 	},
 	// see more options below
 });
-
+console.log('enhanced-resolve')
 myResolve(__dirname, "@/index.js", (err, result) => {
 	console.log(`result: `, result);
 });

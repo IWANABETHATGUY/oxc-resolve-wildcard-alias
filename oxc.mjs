@@ -9,4 +9,5 @@ const resolver = new ResolverFactory({
     '@/*': ['./src/*'],
   }
 });
+console.log( 'oxc-resolver')
 console.log(resolver.sync(process.cwd(), '@/index.js'));
