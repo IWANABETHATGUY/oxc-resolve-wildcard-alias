@@ -21,7 +21,7 @@ jobs:
         with:
           issue-number: ${{ github.event.issue.number }}
           comment-author: 'github-actions[bot]'
-          body-includes: Benchmarks Rust
+          body-includes: 'Thanks for reporting this issue!'
 
       - name: Write a new comment
         uses: peter-evans/create-or-update-comment@v4.0.0
