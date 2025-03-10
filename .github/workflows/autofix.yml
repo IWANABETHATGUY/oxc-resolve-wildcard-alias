@@ -19,7 +19,7 @@ jobs:
         uses: peter-evans/find-comment@v3
         id: find-comment
         with:
-          issue-number: ${{ github.event.number }}
+          issue-number: ${{ github.event.issue.number }}
           comment-author: 'github-actions[bot]'
           body-includes: Benchmarks Rust
 
@@ -29,7 +29,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           comment-id: ${{ steps.find-comment.outputs.comment-id }}
-          issue-number: ${{ github.event.pull_request.number }}
+          issue-number: ${{ github.event.issue.number }}
           body: 'Thanks for reporting this issue! To help us investigate and resolve it more efficiently, could you provide a minimal reproduction? You can either create a StackBlitz project or a GitHub repository demonstrating the problem. This will make it easier for us to debug and find a solution. Thanks!'
           reactions-edit-mode: 'replace'
           edit-mode: replace
