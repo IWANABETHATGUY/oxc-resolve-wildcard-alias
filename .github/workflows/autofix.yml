@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.label.name == 'needs-reproduction'
     permissions:
-      pull-requests: write
+      issues: write
     steps:
       - name: Find Comment
         uses: peter-evans/find-comment@v3
